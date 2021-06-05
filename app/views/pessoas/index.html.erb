@@ -11,7 +11,7 @@
       <% @pessoas.each do |pessoa| %>
         <tr>
           <td><%= pessoa.nome %></td>
-          <td><%= pessoa.data_nascimento %></td>
+          <td><%= data(pessoa.data_nascimento) %></td>
         </tr>
       <% end %>
     </tbody>
