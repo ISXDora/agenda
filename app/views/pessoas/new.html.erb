@@ -1,2 +1,9 @@
-<h1>Pessoas#new</h1>
-<p>Find me in app/views/pessoas/new.html.erb</p>
+<h1>Cadastrar Pessoa</h1>
+
+<%= link_to 'Voltar', pessoas_path, class: 'btn btn-secondary' %>
+
+<%= simple_form_for @pessoa do |f| %>
+  <%= f.input :nome, required: true %>
+  <%= f.input :data_nascimento, as: :date, label: 'Data de nascimento', html5: true %>
+  <%= f.button :submit, 'Enviar', class: 'btn-secondary' %>
+<% end %>
