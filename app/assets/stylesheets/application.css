@@ -1,3 +1,10 @@
+*= require_tree .
+  *= require_self
+    */
+ .btn {
+    margin-bottom: 1em !important;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
